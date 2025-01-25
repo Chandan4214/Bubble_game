@@ -20,32 +20,56 @@ html,body{
     width: 80%;
     height: 80%;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
 }
 #ptop{
-    height:70px;
+    height:15%;
     width: 100%;
-    background-color: rgb(57, 88, 9);
+    background-color: rgb(110, 145, 57);
     display: flex;
+    flex: flex-wrap;
     align-items: center;
-     justify-content: space-evenly;
+    gap: 5px;
+    justify-content: space-around;
 }
 .elem{
     display: flex;
-   color: azure;
+    color: azure;
    align-items: center;
+   
 
 }
+@media (max-width:426px) {
+    .elem h1{
+          font-size: small;
+    }
+    #ptop{
+      height: 20%;
+      display: flex;
+      flex-wrap :wrap;
+    }
+    #pbtm{
+        display: flex;
+        flex-wrap: wrap;
+    
+
+    }
+    
+    
+    
+}
 #box{
-    height:40px;
-    width: 60px;
+    height:30px;
+    width: 40px;
     color: #121111;
     background-color: rgb(211, 201, 201);
-    font-weight:800;
+    font-weight:600;
     font: bolder;
-    font-size: 20px;
-    border: solid black;
+    font-size: 15px;
+    border: solid black 1px;
     border-radius: 10%;
     display: flex;
     justify-content: center;
@@ -58,9 +82,8 @@ html,body{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    
-    gap: 10px;
-    background-color: rgb(173, 107, 107);
+    gap: 3px;
+    background-color: rgb(80, 160, 116);
 
 
 }
