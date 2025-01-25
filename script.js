@@ -1,4 +1,4 @@
-var timer=10;
+var timer=30;
 var score=0;
 var hitrn=0;
 
@@ -21,7 +21,7 @@ function makeBubble(){
     var bubble="";
 
 
-for(var i=0;i<=165;i++){
+for(var i=0;i<=173;i++){
     var rn=Math.floor(Math.random()*10)
     bubble+=` <div class="bubble">${rn}</div>`
 }
